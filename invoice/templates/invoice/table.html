@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>This is table page</h1>
+      <table style="width:100%">
+        <tr>
+          <th>Invoice Number</th>
+          <th>Date</th>
+          <th>Name</th>
+          <th>Total TTC</th>
+          <th>Total VAT</th>
+        </tr>
+        {% for invoice in invoices %}
+        <tr>
+          <td>{{ invoice.number }}</td>
+          <td>{{ invoice.date }}</td>
+          <td>{{ invoice.name }}</td>
+          <td>{{ invoice.total_tcc }}</td>
+          <td>{{ invoice.total_vat }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+  </body>
+</html>

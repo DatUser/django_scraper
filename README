@@ -1,0 +1,25 @@
+DJANGO-APP:
+-----------
+
+How it works:
+-------------
+
+First, create the virtual environment using:
+
+python3 -m venv venv
+
+Then, activate the virtual environment:
+
+source venv/bin/activate
+
+Now you can install the requirements using:
+
+pip install -r requirements.txt
+
+Finally, you can run the app using this command:
+
+python3 manage.py runserver
+
+Or, run the tests using this one:
+
+python3 manage.py test
